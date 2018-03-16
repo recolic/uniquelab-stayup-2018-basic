@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import http.server, socketserver
 import hashlib
 import random

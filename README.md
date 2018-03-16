@@ -6,7 +6,7 @@
 
 1. 获得题目
 
-假定你的email为`example@example.com`，请向`https://unique.recolic.net/unique.php`发送`HTTP POST`请求，并传递参数`challenger=example@example.com`。请解决这个过程中遇到的问题，并将服务端返回的uid记录下来备用。
+假定你的email为`example@example.com`，请向`https://unique.recolic.net/getuid.php`发送`HTTP POST`请求，并传递参数`challenger=example@example.com`。请解决这个过程中遇到的问题，并将服务端返回的uid记录下来备用。
 
 > 如果你使用了和他人相同的email，本问题所有小题的成绩无效。
 
