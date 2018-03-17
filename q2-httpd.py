@@ -4,8 +4,8 @@ import hashlib
 import random
 
 listen_port = 25565
-data_size = 100
-pswd_modified_rate = 1
+data_size = 90000
+pswd_modified_rate = 0.001
 
 def get_md5(text):
     obj = hashlib.md5(text.encode())
