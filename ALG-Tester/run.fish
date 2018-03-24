@@ -1,7 +1,7 @@
 #!/usr/bin/fish
 
-set range 1024
-set round 1
+set range 4
+set round 1024
 
 function do_a_test
     # not process safe!
@@ -24,6 +24,8 @@ end
 for _ in (seq $round)
     for i in (seq $range)
         do_a_test $i
+        # Beaten wmy used srand(time()) so I have to wait
+        sleep 0.05
     end
 end
 
