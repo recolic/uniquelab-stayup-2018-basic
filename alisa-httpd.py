@@ -7,6 +7,8 @@ import subprocess
 listen_port = 25566
 
 def makedata(_size):
+    if int(_size) > 10000000:
+        return 'I\'m sorry.'
     res = subprocess.run(['./makedata', "--size", _size], check=True, stdout=subprocess.PIPE)
     return res.stdout
 

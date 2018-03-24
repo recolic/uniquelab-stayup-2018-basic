@@ -21,7 +21,7 @@ int main(int argcter, char **argv){
     q.push(-x);
     ans+=x;
     if(i&1){
-      int t=-q.top();q.top();
+      int t=-q.top();q.pop();
       ans-=t*2;
     }
   }
